@@ -5,83 +5,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<!-- <style>
-
-.name{
-background-color: rgb(0, 0, 0);
-height: 100px;
-width: 100%;
-
-border-radius: 50%;
-border: 3px solid rgb(255, 3, 3);
-font-size: 40PX;
-text-align: center;
-align-items: center;
-justify-content: center;
-display: flex;
-color: aliceblue;
-
-}
-.underwere,.banel{
-display: flex;
-}
-.table-sample{
-background-color: rgb(207, 189, 189);
-height: 70vh;
-width: 100%;
-border: 3px solid;
-margin: 5px;
-}
-img{
-height: 35vh;
-width: 50%;
-}
-*{
-justify-content: center;
-text-align: center;
-align-items: center;
-font-size: 17PX;
-font-weight: 1000;
-
-
-}
-
-
-tr,td,table{
-border: 2px solid;
-background-color: #fffbfb;
-justify-content: center;
-text-align: center;
-align-items: center;
-margin: 4px;
-color: rgb(31, 20, 252);
-}
-body{
-background-color: rgb(0, 0, 0);
-}
-.table{
-margin: 4px;
-border: 2px solid;
-display: flex;
-justify-content: center;
-text-align: center;
-align-items: center;
-}
-
-</style>-->
 
 <style>
     img{
     background-color: rgb(255, 255, 255);
 height: 29vh;
 width: 50%;
-padding: 7px;
-background-color: rgb(255, 255, 255);
-border: 5px solid black;
-    margin:5px;
 
+background-color: rgb(255, 255, 255);
+border: 1px solid black;
+
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20%;
+    padding: 0.5%;
+    margin: 1%;
 }
 *{
+
 margin: 0;
 padding: 0;
 }
@@ -89,15 +30,18 @@ padding: 0;
 background-color: rgb(240, 232, 232);
 border: 1px solid;
 display: flex;
-display: flex;
+
 align-items: center;
 justify-content: center;
 text-align: center;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(8, 0, 255, 0.3) 0px 18px 36px -18px inset;    border-radius: 20%;
+    padding: 0.5%;
+    margin: 1%;
 }
 .product-name{
-border: 2px solid;
-padding: 3px;
-margin: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(8, 0, 255, 0.3) 0px 18px 36px -18px inset;    border-radius: 20%;
+    padding: 1%;
+    margin: 1%;
 background-color: black;
 color: beige;
 font-size: large;
@@ -110,6 +54,7 @@ padding: 3px;
 margin: 3px;
 color: aliceblue;
 
+
 }
 /* div{
 box-shadow: 10px 10px 5px lightblue;
@@ -120,6 +65,9 @@ display: flex;
 align-items: center;
 text-align: center;
 justify-content: center;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(8, 0, 255, 0.3) 0px 18px 36px -18px inset;    border-radius: 20%;
+    padding: 0.5%;
+    margin: 1%;
 }
 .table{
 /* border: 1px solid; */
@@ -128,10 +76,13 @@ text-align: center;
 width: 50%;
 justify-content: center;
 align-items: center;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(8, 0, 255, 0.3) 0px 18px 36px -18px inset;    border-radius: 20%;
+    padding: 0.5%;
+    margin: 1%;
 }
 tr,th,td{
 border: 1px solid;
-padding: 2px;
+padding: 4px;
 font: bold;
 font-weight: 1000;
 }
@@ -152,7 +103,9 @@ align-items: center;
 justify-content: center;
 display: flex;
 }
-
+#MAIN_ALL_PAGE_LINK{
+    color: black;
+}
 </style>
 </head>
 <body>
@@ -162,11 +115,13 @@ display: flex;
 </div>
 
 
-
+<a id="MAIN_ALL_PAGE_LINK" href="https://sk23.github.io/m-pay/"> 
 <div class="underwere">
-<div class="table-sample"> <img src="MR1.jpg" alt="">
+<div class="table-sample"> 
+    <img src="MR1.jpg" alt="">
 
 <div class="table">
+ 
 <div class="product-name">Cotton Check Colour Rumal <br>50 CM * 53 CM</div>
 <button class="button-product-code">product code-MR1</button>
 <table>
@@ -174,15 +129,13 @@ display: flex;
 <td>1 pieces</td>
 <td>14 RS</td>
 </tr>
-
-
-
 </table>
 <marquee
 behavior="alternate"
 id="marquee"
 scrollamount = "4">
-<a href="https://sk23.github.io/m-pay/"> <button id="link2" onclick="red()">click to order</button></a></div>
+<a href="https://sk23.github.io/m-pay/"> <button id="link2" onclick="red()">click to order</button></a>
+</div>
 </marquee>
 </div>
 
@@ -209,7 +162,8 @@ scrollamount = "4">
 behavior="alternate"
 id="marquee"
 scrollamount = "4">
-<a href="https://sk23.github.io/m-pay/"> <button id="link2" onclick="red()">click to order</button></a></div>
+<a href="https://sk23.github.io/m-pay/"> <button id="link2" onclick="red()">click to order</button>
+</div>
 </marquee>
 </div>
 
@@ -560,7 +514,7 @@ scrollamount = "4">
 </div>
 
 </div>
-
+</a>
 
     <script>
 
@@ -568,7 +522,6 @@ scrollamount = "4">
     </script>
 </body>
 </html>
-
 
 
 
