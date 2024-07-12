@@ -1057,7 +1057,38 @@ BORDER COLOUR BANIYAN 100 NO <BR>
  <DIV class="PRODCT_INFORMATION">
 
   <!-- REAL PRICE CUT  -->
-  <img src="M13.jpg" alt="M13">
+
+  <div class="slideshow-container">
+                        
+    <div class="mySlidesM13 fade">
+      <div class="numbertext">1</div>
+      <img src="M13A.jpg" style="width:100%">
+      <div class="text">Sample 1</div>
+    </div>
+    
+    <div class="mySlidesM13 fade">
+      <div class="numbertext">2</div>
+      <img src="M13B.jpg" style="width:100%">
+      <div class="text">sample 2</div>
+    </div>
+    
+    <div class="mySlidesM13 fade">
+      <div class="numbertext">3</div>
+      <img src="M13C.jpg" style="width:100%">
+      <div class="text">Sample 3</div>
+    </div>
+    
+  
+    </div>
+  
+    
+    <div style="text-align:center">
+        <span class="dotM13"></span> 
+        <span class="dotM13"></span> 
+      <span class="dotM13"></span> 
+  
+    </div>
+    
 <P><S class="M_price">350 RS </S>= 244 RS</P>
 
 <!-- BUTTON VALUE  -->
@@ -1521,25 +1552,26 @@ NIGHT-PANT XXL-SIZE <BR>
 
             
             
-            var slideH1Index = 0;
-            showSlidesH1();
-            
-            function showSlidesH1() {
-              let i;
-              let slidesH1 = document.getElementsByClassName("mySlidesH1");
-              let dotsH1 = document.getElementsByClassName("dotH1");
-              for (i = 0; i < slidesH1.length; i++) {
-                slidesH1[i].style.display = "none";  
-              }
-              slideH1Index++;
-              if (slideH1Index > slidesH1.length) {slideH1Index = 1}    
-              for (i = 0; i < dotsH1.length; i++) {
-                dotsH1[i].className = dotsH1[i].className.replace(" active", "");
-              }
-              slidesH1[slideH1Index-1].style.display = "block";  
-              dotsH1[slideH1Index-1].className += " active";
-              setTimeout(showSlidesH1, 2000); // Change image every 2 seconds
-            }
+var slideM13Index = 0;
+showSlidesM13();
+
+function showSlidesM13() {
+let i;
+let slidesM13 = document.getElementsByClassName("mySlidesM13");
+let dotsM13 = document.getElementsByClassName("dotM13");
+for (i = 0; i < slidesM13.length; i++) {
+slidesM13[i].style.display = "none";  
+}
+slideM13Index++;
+if (slideM13Index > slidesM13.length) {slideM13Index = 1}    
+for (i = 0; i < dotsM13.length; i++) {
+dotsM13[i].className = dotsM13[i].className.replace(" active", "");
+}
+slidesM13[slideM13Index-1].style.display = "block";  
+dotsM13[slideM13Index-1].className += " active";
+setTimeout(showSlidesM13, 2000); // Change image every 2 seconds
+}
+
                 </script>
 
 
