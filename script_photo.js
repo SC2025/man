@@ -1,4 +1,4 @@
-  <!-- product photo change function -->
+// product photo change function 
 
 
             
@@ -16,7 +16,7 @@ slidesM13[i].style.display = "none";
 slideM13Index++;
 if (slideM13Index > slidesM13.length) {slideM13Index = 1}    
 for (i = 0; i < dotsM13.length; i++) {
-dotsM13[i].className = dotsM13[i].className.replace(" active", "");
+dotsM13[i].className = dotsM13[i].className.replace("active", "");
 }
 slidesM13[slideM13Index-1].style.display = "block";  
 dotsM13[slideM13Index-1].className += " active";
