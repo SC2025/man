@@ -4,8 +4,7 @@
             
             
 var slideM13Index = 0;
-
-
+showSlidesM13(); 
 function showSlidesM13() {
 let i;
 let slidesM13 = document.getElementsByClassName("mySlidesM13");
@@ -19,9 +18,9 @@ for (i = 0; i < dotsM13.length; i++) {
 dotsM13[i].className = dotsM13[i].className.replace("active", "");
 }
 slidesM13[slideM13Index-1].style.display = "block";  
-dotsM13[slideM13Index-1].className += " active";
+dotsM13[slideM13Index-1].className += "active";
 setTimeout(showSlidesM13, 2000); // Change image every 2 seconds
 }
 
-showSlidesM13();      
+     
 
