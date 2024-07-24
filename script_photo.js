@@ -4,7 +4,7 @@
             
             
 var slideM13Index = 0;
-showSlidesM13();
+
 
 function showSlidesM13() {
 let i;
@@ -23,4 +23,5 @@ dotsM13[slideM13Index-1].className += " active";
 setTimeout(showSlidesM13, 2000); // Change image every 2 seconds
 }
 
-          
+showSlidesM13();      
+
