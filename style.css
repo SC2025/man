@@ -185,13 +185,6 @@ border-radius: 10PX;
     color: aliceblue;
   }
   
-  #all_pro_page{
-    display: flex;  
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
   
   .PRODCT_INFORMATION{
     justify-content: center;
@@ -201,10 +194,10 @@ border-radius: 10PX;
   background-color: rgb(255, 255, 255);
   border: 3px solid black;
   margin-bottom: 20%;
-  padding: 2PX;
+  padding: 3PX;
   border-radius: 15PX;
-width: 48%;
-margin: 1PX;
+margin-left: 2px;
+margin-right: 2px;
   }
 
 
